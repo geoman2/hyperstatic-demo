@@ -29,12 +29,6 @@ export default state => {
         {results.map(pokemon => (
           <Link to={`/pokedex/${pokemon.id}`} class="card">
             <img src={pokemon.img} alt={pokemon.name} />
-            <div class="poke-info">
-              <h3>{pokemon.name}</h3>
-              <p><small>Height:</small> {pokemon.height}</p>
-              <p><small>Weight:</small> {pokemon.weight}</p>
-              <p><small>Types: {pokemon.type.map(type => <b>{type}, </b>)}</small></p>
-            </div>
           </Link>
         ))}
       </div>
