@@ -13,7 +13,7 @@ const renderPages = require('hyperstatic/src/renderPages');
   ]
 
   // Get a list of pokemon pages
-  const pokemonPages = await fetch('https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json')
+  const pokemonPages = await fetch('https://github.com/geoman2/hyperstatic-demo/tree/master/src/pokedex1.json')
     .then(response => response.json())
     .then(data => data.pokemon.map(pokemon => `/pokedex/${pokemon.id}`))
 
