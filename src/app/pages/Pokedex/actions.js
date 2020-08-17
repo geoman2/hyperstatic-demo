@@ -20,7 +20,7 @@ export const Init = (state) => [
     pokeSearch: ''
   },
   StaticFetch({
-    url: 'https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json',
+    url: 'https://github.com/geoman2/hyperstatic-demo/blob/master/pokedex1.json',
     action: HandlePokedex,
     error: HandleError
   })
